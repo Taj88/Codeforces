@@ -1,9 +1,5 @@
 #include <bits/stdc++.h>
 
-#include <stdlib.h>
-#include <string.h>
-
-
 using namespace std;
 int main(){
     int count=0;
