@@ -4,14 +4,15 @@ using namespace std;
 #define forn(i, n) for (int i = 0; i < n; i++)
 int main()
 {
-    int n, sum = 0;
+    int n;
     cin >> n;
-    forn(i, n)
+    int sm = 0;
+    while (n--)
     {
-        int c;
-        cin >> c;
-        sum += c;
+        int a;
+        cin >> a;
+        sm += a * 3;
     }
-    cout << sum;
+    cout << sm;
     return 0;
 }

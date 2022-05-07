@@ -4,14 +4,14 @@ using namespace std;
 #define forn(i, n) for (int i = 0; i < n; i++)
 int main()
 {
-    int n, sum = 0;
-    cin >> n;
-    forn(i, n)
+    string s;
+    cin >> s;
+    int cnt = 0;
+    for (int i = 0; i < s.size(); i++)
     {
-        int c;
-        cin >> c;
-        sum += c;
+        if (s[i] == 'o')
+            cnt++;
     }
-    cout << sum;
+    cout << cnt;
     return 0;
 }

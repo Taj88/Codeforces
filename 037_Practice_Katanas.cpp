@@ -4,14 +4,8 @@ using namespace std;
 #define forn(i, n) for (int i = 0; i < n; i++)
 int main()
 {
-    int n, sum = 0;
-    cin >> n;
-    forn(i, n)
-    {
-        int c;
-        cin >> c;
-        sum += c;
-    }
-    cout << sum;
+    int a, b;
+    cin >> a >> b;
+    cout << std::lcm(a,b);
     return 0;
 }

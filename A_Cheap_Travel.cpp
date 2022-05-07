@@ -3,6 +3,8 @@ using namespace std;
 #define ll long long
 #define forn(i, n) for (int i = 0; i < n; i++)
 int main(){
+ios::sync_with_stdio(false);
+cin.tie(0);
 int n,m,a,b,count=0;
 cin>>n>>m>>a>>b;
 if(m>n && (n*a)>b){
