@@ -22,16 +22,18 @@ int main()
             cout << "<" << endl;
         else
         {
-            x1=x1*pow(10,p1);
-x2=x2*pow(10,p2);
-if(x1>x2){
-    cout<<">"<<'\n';
-}
-else if(x1<x2){
-        cout<<"<"<<'\n';
-}
-else     cout<<"="<<'\n';
- 
-
+            x1 = x1 * pow(10, p1);
+            x2 = x2 * pow(10, p2);
+            if (x1 > x2)
+            {
+                cout << ">" << '\n';
+            }
+            else if (x1 < x2)
+            {
+                cout << "<" << '\n';
+            }
+            else
+                cout << "=" << '\n';
         }
-    }}
+    }
+}

@@ -1,15 +1,36 @@
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
-int a, b, mas[4][5001], ma[4], ans;
-int main() {
+int a, b, mas[4][5001], ma[4];
+#define forn(i, n) for (int i = 0; i < n; i++)
+
+int main()
+{
     cin >> a;
-    for (int i = 1; i <= a; i++) {
-        cin >> b;
-        mas[b][ma[b]++] = i;
+    int ar[a];
+    forn(i, a)
+    {
+        cin >> ar[i];
+        mas[ar[i]][ma[ar[i]]++] = i;
     }
-    ans = min(ma[1], min(ma[2], ma[3]));
-    cout << ans << endl;
-    for (int i = 0; i < ans; i++) {
-        cout << mas[1][i] << " " << mas[2][i] << " " << mas[3][i] << endl;
+    int one = 0, two = 0, three = 0;
+    forn(i, a)
+    {
+        if (ar[i] == 1)
+        {
+            one++;
+        }
+        else if (ar[i] == 2)
+        {
+            two++;
+        }
+        else
+            three++;
+    }
+    int n = 0;
+    n = min(min(one, two), three);
+    cout << n << endl;
+    for (int i = 0; i < n; i++)
+    {
+        cout << mas[1][i] + 1 << " " << mas[2][i] + 1 << " " << mas[3][i] + 1 << endl;
     }
 }
