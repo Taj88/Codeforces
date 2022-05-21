@@ -10,23 +10,13 @@ int main()
     cin >> t;
     while (t--)
     {
-        ll s;
-        cin >> s;
-       
-        if (s<100)
-        {
-            cout << s%10<< '\n';
-        }
-        else{
-          int r=0,small=9;
-         while (s > 0) {
-       r = s % 10;     
-       if (small > r) {
-           small = r;
-       }
-       s = s / 10;
-   }
-   cout<<small<<'\n';
-    }}
-    return 0;
+      string s;
+    cin >> s;
+    if (s.size() == 2) {
+      cout << s[1] << '\n';
+    } else {
+      cout << *min_element(s.begin(), s.end()) << '\n';
+    }
+  }
+  return 0;
 }
