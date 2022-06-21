@@ -10,24 +10,18 @@ int main()
     cin >> t;
     while (t--)
     {
-        ll n;
-        cin >> n;
-        int ar[n];
-        int x = 0;
-           forn(i,n)
-    {
-            cin >> ar[i];
-        }
-           forn(i,n-1)
-
+        int cnt = 0;
+        string s, x;
+        cin >> s >> x;
+        forn(i, s.length())
         {
-            if (ar[i] > ar[i + 1])
+            if (s[i] == x[0] && i % 2 == 0)
             {
-                x++;
-                i++;
+
+                cnt = 1;
             }
         }
-        cout << x << '\n';
+        cout << (cnt == 1 ? "YES" : "NO") << "\n";
     }
     return 0;
 }
