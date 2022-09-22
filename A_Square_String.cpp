@@ -7,21 +7,13 @@ ios::sync_with_stdio(false);
 cin.tie(0);
 int t;
 cin>>t;
-int cnt1=0,cnt2=0;
-string s[t];
-string a,b;
-forn(i,t)
+while (t--)
 {
-    cin>>s[i];
-a=s[0];
-if(s[i]!=s[0]){
-    b=s[i];
+string s;
+cin>>s;
+ cout << (s.size() % 2 == 0 && s.substr(0, s.size() / 2) == s.substr(s.size() / 2) ? "YES" : "NO") << '\n';
 }
-if(s[i]==a){
-    cnt1++;
-}
-else cnt2++;
-}
-cout<<(cnt1>cnt2 ? a:b);
+
+
    return 0;
 }

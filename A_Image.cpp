@@ -7,21 +7,24 @@ ios::sync_with_stdio(false);
 cin.tie(0);
 int t;
 cin>>t;
-int cnt1=0,cnt2=0;
-string s[t];
-string a,b;
-forn(i,t)
+while (t--)
 {
-    cin>>s[i];
-a=s[0];
-if(s[i]!=s[0]){
-    b=s[i];
+string s,r;
+cin>>s;
+cin>>r;
+s+=r;
+int cnt=0;
+sort(s.begin(),s.end());
+
+forn(i,3){
+if(s[i]!=s[i+1]){
+    cnt++;
 }
-if(s[i]==a){
-    cnt1++;
 }
-else cnt2++;
+cout<<cnt<<'\n';
+
+
+
 }
-cout<<(cnt1>cnt2 ? a:b);
    return 0;
 }
