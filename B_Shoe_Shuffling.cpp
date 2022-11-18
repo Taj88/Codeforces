@@ -12,32 +12,45 @@ int main()
     {
         ll n;
         cin >> n;
-        vector<ll> ar(n);
+        vector<ll> ar(n),x(n);
+        ll l=0,r=0;
         forn(i, n)
         {
             cin >> ar[i];
+            x[i]=i+1;
         }
         ll y = 1;
-        forn(i, n - 2)
+        forn(i, n )
         {
-            if (ar[i] != ar[i + 1] && ar[i + 1] != ar[i + 2])
+            if (ar[i] != ar[i + 1] && ar[i ] != ar[i-1])
             {
                 y =0;
+                break;
             }
         }
         
-        if (y == 0)
+        if (!y )
         {
             cout << -1 << "\n";
         }
+    
         else
-        {
-            cout << n << " ";
-            forn(i, n - 1)
-            {
-                cout << i + 1 << " ";
+        {   
+             while(r<n){
+
+            if ( ar[r] == ar[r + 1]) {
+                r++;
+                }
+          else{   
+           rotate ( x.begin()+l, x.begin()+r, x.begin()+r+1);
+           l=r+1;
+           r++;
+           }
             }
-            cout << endl;
+            for(auto u:x){
+                cout<<u<<" ";
+            }
+            cout<<'\n';
         }
     }
     return 0;
