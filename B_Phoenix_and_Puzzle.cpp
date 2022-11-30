@@ -12,27 +12,13 @@ int main()
     cin >> t;
     while (t--)
     {
-        ll n, x = 0;
+        ll n, x = 0, y = 0;
         cin >> n;
-        x = sqrt(n);
-        if(n==1){
-            no;
-        }
-        else if (x * x == n)
-        {
-            yes;
-            
-        }
-       else if(n%2==0){
-        n /= 2;
-        x = sqrt(n);
-         if (x * x == n)
-            yes;
-            
-        else
-            no;
-            }
-            else no;
+        x = sqrt(n / 2);
+        y = sqrt(n / 4);
+        x *= x * 2;
+        y *= y * 4;
+        cout << (x == n || y == n ? "YES" : "NO") << '\n';
     }
     return 0;
 }
