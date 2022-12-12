@@ -21,10 +21,7 @@ int main()
     {
 
      }
-     
-     
 
-     
         int cnt = 0;
         forn(i, n - 2)
         {
