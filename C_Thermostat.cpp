@@ -22,7 +22,6 @@ int main()
         {
             cout << 1 << '\n';
         }
-
         else if (b - l >= x && a - l >= x || r - b >= x && r - a >= x)
         {
             cout << 2 << '\n';

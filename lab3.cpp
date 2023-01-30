@@ -13,7 +13,11 @@ using namespace __gnu_pbds;
     freopen("input.in", "r", stdin); \
     freopen("output.out", "w", stdout);
 
+template <typename T>
+using ordered_set = tree<T, null_type, less<T>, rb_tree_tag, tree_order_statistics_node_update>;
 
+template <typename T>
+using ordered_multiset = tree<T, null_type, less_equal<T>, rb_tree_tag, tree_order_statistics_node_update>;
 
 #define ll long long
 #define sz(x) (int)x.size()
@@ -23,6 +27,16 @@ using namespace __gnu_pbds;
 const ll MOD = 1e9 + 7;
 const int MXN = 2e5 + 5;
 
+#define no cout << "No\n"
+#define NO cout << "NO\n"
+
+#define yes cout << "Yes\n"
+#define YES cout << "YES\n"
+
+int dx4[] = { 1, -1, 0, 0 };
+int dy4[] = { 0, 0, 1, -1 };
+int dx8[] = { 0, 0, 1, 1, 1, -1, -1, -1 };
+int dy8[] = { 1, -1, 1, -1, 0, 0, -1, 1 };
 
 map<string, int> rel;
 map<string, int> id;
@@ -233,6 +247,7 @@ int main()
 {
     sync;
     int tc = 1;
-    for (int i = 1; i <= tc; i++)
-        sol(i);
+    // cin >> tc;
+    for (int ii = 1; ii <= tc; ++ii)
+        sol(ii);
 }
