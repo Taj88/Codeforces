@@ -9,6 +9,9 @@ int main()
     vector<int> a(n), b(m);
     forn(i, n)
     {
+
+
+        
         cin >> a[i];
     }
     forn(i, m)
