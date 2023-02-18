@@ -4,8 +4,8 @@
             "name": "Win32",
             "includePath": [
                 "${workspaceFolder}/**",
-                "C:\\x86_64-8.1.0-release-posix-seh-rt_v6-rev0\\mingw64\\opt\\include",
-                "C:\\x86_64-8.1.0-release-posix-seh-rt_v6-rev0\\mingw64\\include"
+                "C:\\mingw\\include",
+                "C:\\mingw\\include"
             ],
             "defines": [
                 "_DEBUG",
@@ -15,7 +15,7 @@
             "cStandard": "gnu17",
             "cppStandard": "c++17",
             "intelliSenseMode": "windows-gcc-x64",
-            "compilerPath": "C:/x86_64-8.1.0-release-posix-seh-rt_v6-rev0/mingw64/bin/g++.exe"
+            "compilerPath": "C:\\mingw\\bin\\g++.exe"
         }
     ],
     "version": 4

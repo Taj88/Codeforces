@@ -72,6 +72,5 @@
         "typeinfo": "cpp",
         "valarray": "cpp"
     },
-    "python.pythonPath": "C:\\Users\\Spry-Shanto\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
-    "C_Cpp.errorSquiggles": "Disabled"
+    "C_Cpp.errorSquiggles": "disabled"
 }
